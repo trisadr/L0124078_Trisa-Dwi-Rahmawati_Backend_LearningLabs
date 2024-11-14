@@ -1,0 +1,177 @@
+/* Tetap mengimpor font Pacifico */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5a5d2;
+    background: url(kitty.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+/* Styling heading */
+.heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styling */
+#taskForm {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task_input, .desc_input, .add_btn {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.add_btn {
+    background-color: #6ec9d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Hover effect */
+.add_btn:hover {
+    background-color: #3cc1e6;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Header styling */
+th {
+    background-color: #6ec9d7;
+    color: white;
+    padding: 12px;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    font-size: 18px;
+    vertical-align: middle; /* Pusatkan teks secara vertikal */
+}
+
+/* Cell styling */
+td {
+    padding: 15px;
+    text-align: center; /* Pusatkan teks secara horizontal */
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    vertical-align: middle; /* Pusatkan teks secara vertikal */
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+/* Button styling for actions */
+.delete {
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.edit_btn, .toggle_status_btn {
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+/* Button hover effect */
+.edit_btn:hover, .toggle_status_btn:hover {
+    background-color: #f09dbc;
+}
+
+/* Completed task styling */
+.completed {
+    text-decoration: line-through;
+    color: rgb(245, 150, 188);
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgba(250, 197, 221, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+}
+
+.close:hover {
+    color: #ff0066;
+}
+
+/* Error message styling */
+.error {
+    color: rgb(255, 0, 115);
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
